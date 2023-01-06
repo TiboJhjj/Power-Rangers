@@ -38,3 +38,20 @@ git reset : permet de annuler des commits et de revenir à une version précéde
 En plus de ces commandes de base, il existe également de nombreux outils en ligne et des plugins pour différents éditeurs de code qui facilitent l'utilisation de Git. Ces outils peuvent vous aider à visualiser et à gérer vos dépôts de manière plus intuitive et interactive.
 
 En résumé, Git est un outil puissant et très utile pour la gestion de version de code. En suivant les bonnes pratiques et en prenant le temps de comprendre comment fonctionne Git, vous serez en mesure de l'utiliser efficacement dans votre workflow de développement et de travailler en collaboration avec d'autres personnes sur des projets de code.
+
+Cours sur Git
+
+Quelle est l'intérêt de git :
+Git est un logiciel de contrôle de version qui permet de suivre l'historique des modifications apportées à un projet et de gérer les différentes versions de celui-ci. Cela peut être très utile pour les projets de développement de logiciels, car cela permet aux différents développeurs de travailler de manière collaborative sur le même code, de gérer les conflits de modification et de garder une trace de l'historique des modifications. Git est également utile pour les projets individuels, car il permet de facilement récupérer une version antérieure du projet en cas de problème ou de faire des expérimentations en toute sécurité sans risquer de perdre le travail accompli.
+
+Pouvoir travailler a plusieurs :
+L’un des principaux avantages de Git est la possibilité de travailler de manière collaborative sur un projet. Chaque développeur peut avoir sa propre copie du projet (appelée "repository" en anglais) sur sa machine et y apporter des modifications. Ces modifications peuvent être regroupées dans des "commits" qui peuvent être envoyés sur le repository central du projet, généralement hébergé sur un serveur. Ainsi, chaque développeur peut travailler de manière indépendante, mais tous les travaux sont regroupés et synchronisés sur le repository central. Cela permet également de garder une trace de l'historique des modifications et de faciliter la collaboration et la communication entre les différents dév eloppeurs.
+
+Revenir en arrière, travail en équipe et partage de fichier de version
+
+Centralisé ou distribué :
+Il existe d'autres outils de gestion de versions, comme CVS (Concurrent Versions System) ou Subversion (SVN). Ces outils sont basés sur un modèle centralisé, c'est-à-dire qu'il y a un repository central qui contient toutes les versions du projet, et les développeurs travaillent en "checkant out" (ou "prendre en charge") des copies de travail du projet sur leur machine, et en "checkant in" (ou "rendre") leurs modifications sur le repository central.
+Git, en revanche, est basé sur un modèle distribué. Cela signifie que chaque développeur a une copie complète du repository sur sa machine, et non simplement une copie de travail. Cela permet à chaque développeur de travailler de manière totalement indépendante et de synchroniser son travail avec les autres plus tard. Cela offre également une certaine flexibilité en cas de problèmes de connexion ou de disponibilité du repository central, car chaque développeur a une copie complète du repository et peut continuer à travailler sans être dépendant du repository central.
+Git hub open source :
+Oui, Git est un logiciel open source, ce qui signifie qu'il est librement disponible et que son code source est ouvert à tous. Cela permet à la communauté de développeurs de contribuer au projet et d'apporter des améliorations, ce qui a contribué à en faire l'un des outils de gestion de versions les plus populaires et les plus utilisés dans le monde.
+Le fait que Git soit open source est également bénéfique pour les utilisateurs, car cela signifie qu'ils peuvent utiliser l'outil sans avoir à débourser de l'argent pour l'obtenir et qu'ils peuvent également participer au développement du logiciel s'ils le souhaitent. De plus, étant donné que le code source de Git est ouvert, il est possible de vérifier comment il fonctionne et de le modifier pour répondre aux besoins spécifiques d'un projet ou d'une organisation.
