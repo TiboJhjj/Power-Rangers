@@ -21,9 +21,9 @@ Tout d'abord, il faut installer Git sur votre ordinateur. Vous pouvez téléchar
 
 Une fois Git installé, ouvrez votre terminal et naviguez jusqu'au répertoire où se trouvent les fichiers que vous voulez versionner.
 
-Initialisez votre dépôt Git en utilisant la commande git init. Cela créera un sous-répertoire nommé ".git" qui contiendra toutes les informations sur votre dépôt.
+Initialisez votre dépôt Git en utilisant la commande `git init`. Cela créera un sous-répertoire nommé ".git" qui contiendra toutes les informations sur votre dépôt.
 
-Avant de pouvoir enregistrer vos modifications dans Git, vous devez d'abord les ajouter à l'index en utilisant la commande git add. Par exemple, pour ajouter tous les fichiers du répertoire courant à l'index, vous pouvez utiliser git add .
+Avant de pouvoir enregistrer vos modifications dans Git, vous devez d'abord les ajouter à l'index en utilisant la commande `git add`. Par exemple, pour ajouter tous les fichiers du répertoire courant à l'index, vous pouvez utiliser `git add` .
 
 Une fois que vous avez ajouté les fichiers à l'index, vous pouvez enregistrer vos modifications en créant un commit en utilisant la commande git commit -m "message de commit". Le message de commit doit décrire les modifications apportées et expliquer pourquoi elles ont été faites.
 
