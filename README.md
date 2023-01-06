@@ -38,3 +38,39 @@ git reset : permet de annuler des commits et de revenir à une version précéde
 En plus de ces commandes de base, il existe également de nombreux outils en ligne et des plugins pour différents éditeurs de code qui facilitent l'utilisation de Git. Ces outils peuvent vous aider à visualiser et à gérer vos dépôts de manière plus intuitive et interactive.
 
 En résumé, Git est un outil puissant et très utile pour la gestion de version de code. En suivant les bonnes pratiques et en prenant le temps de comprendre comment fonctionne Git, vous serez en mesure de l'utiliser efficacement dans votre workflow de développement et de travailler en collaboration avec d'autres personnes sur des projets de code.
+
+
+### Git clone 
+
+"git clone" est l'un des principaux commandes Git utilisé pour télécharger un dépôt Git existant sur votre ordinateur local. Lorsque vous utilisez "git clone", Git crée une copie complète du dépôt, y compris tous les fichiers source, l'historique de commit et les marques de branche. Cela vous permet de travailler sur le dépôt localement et de synchroniser vos changements avec le dépôt en ligne lorsque vous êtes prêt à partager vos modifications.
+
+Voici comment utiliser la commande "git clone":
+
+Ouvrez une invite de commande ou un terminal dans le répertoire où vous souhaitez cloner le dépôt.
+
+Tapez "git clone" suivi de l'URL du dépôt que vous souhaitez cloner. Par exemple:
+
+Copy code
+git clone https://github.com/username/myrepo.git
+Appuyez sur Entrée. Git téléchargera le dépôt et créera un nouveau répertoire local avec le nom du dépôt.
+Vous pouvez également spécifier un nom de répertoire différent en ajoutant un espace et le nom de répertoire souhaité après l'URL du dépôt. Par exemple:
+
+Copy code
+git clone https://github.com/username/myrepo.git mon_dépôt
+Cela créera un répertoire local appelé "mon_dépôt" au lieu du nom du dépôt par défaut.
+
+### Git init
+
+"git init" est l'un des principaux commandes Git utilisé pour initialiser un nouveau dépôt Git dans un répertoire existant. Lorsque vous utilisez "git init", Git crée un nouveau sous-répertoire appelé ".git" dans le répertoire courant, qui contient tous les fichiers nécessaires pour suivre les modifications apportées aux fichiers dans ce répertoire.
+
+Voici comment utiliser la commande "git init":
+
+Ouvrez une invite de commande ou un terminal dans le répertoire où vous souhaitez initialiser le dépôt.
+
+Tapez "git init" et appuyez sur Entrée. Git créera le sous-répertoire ".git" et initialisera le dépôt.
+
+Vous pouvez également utiliser l'option "-q" pour réduire la quantité de sortie générée par la commande:
+
+Copy code
+git init -q
+Une fois que le dépôt a été initialisé, vous pouvez commencer à ajouter et à commit des fichiers dans le dépôt en utilisant les commandes Git appropriées.
