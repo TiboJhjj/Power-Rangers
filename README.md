@@ -76,3 +76,185 @@ Vous pouvez également utiliser l'option "-q" pour réduire la quantité de sort
 Copy code
 git init -q
 Une fois que le dépôt a été initialisé, vous pouvez commencer à ajouter et à commit des fichiers dans le dépôt en utilisant les commandes Git appropriées.
+
+### Git add
+
+"git add" est l'une des principales commandes Git utilisées pour ajouter des fichiers à l'index de votre dépôt Git. L'index est une zone de stockage temporaire qui contient une liste des fichiers qui seront inclus dans le prochain commit. En ajoutant des fichiers à l'index, vous les préparez pour le commit et les rendez visibles aux autres utilisateurs du dépôt.
+
+Voici comment utiliser la commande "git add":
+
+Ouvrez une invite de commande ou un terminal dans le répertoire de votre dépôt Git.
+
+Pour ajouter un fichier unique à l'index, tapez "git add" suivi du nom du fichier. Par exemple:
+
+Copy code
+git add monfichier.txt
+Pour ajouter tous les fichiers modifiés au dépôt, tapez "git add -u".
+
+Pour ajouter tous les fichiers modifiés et tous les nouveaux fichiers au dépôt, tapez "git add -A".
+
+Appuyez sur Entrée. Git ajoutera les fichiers à l'index et les préparera pour le commit.
+
+Vous pouvez également utiliser l'option "-p" pour ajouter des parties spécifiques d'un fichier plutôt que l'ensemble du fichier. Par exemple:
+
+Copy code
+git add -p monfichier.txt
+Cela ouvrira un éditeur de texte qui vous permettra de choisir les parties du fichier que vous souhaitez ajouter à l'index.
+
+### Git commit
+
+"git commit" est l'une des principales commandes Git utilisées pour enregistrer les changements dans l'historique du dépôt Git. Lorsque vous utilisez "git commit", vous enregistrez une "image" de tous les fichiers dans votre répertoire de travail et de l'index dans l'historique du dépôt. Cela vous permet de revenir à n'importe quel commit précédent et de voir comment les fichiers étaient à ce moment-là.
+
+Voici comment utiliser la commande "git commit":
+
+Ouvrez une invite de commande ou un terminal dans le répertoire de votre dépôt Git.
+
+Assurez-vous que les fichiers que vous souhaitez inclure dans le commit sont ajoutés à l'index en utilisant la commande "git add".
+
+Tapez "git commit" et appuyez sur Entrée. Git ouvrira un éditeur de texte dans lequel vous pouvez entrer un message de commit décrivant les changements apportés aux fichiers.
+
+Entrez votre message de commit et enregistrez le fichier.
+
+Fermez l'éditeur de texte. Git enregistrera le commit et affichera un message de confirmation.
+
+Vous pouvez également utiliser l'option "-m" pour spécifier le message de commit en ligne de commande au lieu d'utiliser un éditeur de texte:
+
+Copy code
+git commit -m "Mon message de commit"
+Il est important de rédiger des messages de commit clairs et descriptifs afin de pouvoir comprendre facilement les changements apportés aux fichiers à différents moments de l'historique du dépôt.
+
+### Git push
+
+Oui, c'est exact! "git push" est l'une des principales commandes Git utilisées pour envoyer vos commits vers un dépôt distant, comme GitHub. Lorsque vous utilisez "git push", vous envoiez les commits de votre dépôt local vers le dépôt distant, en mettant à jour le dépôt distant avec les dernières modifications que vous avez effectuées.
+
+Voici comment utiliser la commande "git push":
+
+Ouvrez une invite de commande ou un terminal dans le répertoire de votre dépôt Git local.
+
+Assurez-vous que vous êtes sur la branche que vous souhaitez pousser en utilisant la commande "git checkout".
+
+Tapez "git push" suivi du nom de la branche distante et du nom du dépôt distant. Par exemple:
+
+Copy code
+git push origin ma_branche
+Cela enverra les commits de la branche "ma_branche" de votre dépôt local vers la branche "ma_branche" du dépôt distant nommé "origin".
+
+Entrez votre nom d'utilisateur et votre mot de passe du dépôt distant si vous y êtes invité.
+
+Appuyez sur Entrée. Git enverra les commits au dépôt distant et affichera un message de confirmation.
+
+Vous pouvez également utiliser l'option "-u" pour définir la branche distante comme la branche par défaut pour la branche en cours. Par exemple:
+
+Copy code
+git push -u origin ma_branche
+Cela signifie que vous n'aurez pas à spécifier le nom de la branche distante chaque fois que vous utiliserez "git push" pour cette branche. Vous pourrez simplement utiliser "git push" sans arguments.
+
+### Git pull
+
+"git pull" est l'une des principales commandes Git utilisées pour récupérer les derniers changements d'un dépôt distant et les fusionner dans votre dépôt local. Lorsque vous utilisez "git pull", Git récupère les commits du dépôt distant et les fusionne automatiquement dans votre branche en cours. Cela vous permet de synchroniser votre dépôt local avec le dépôt distant et de travailler avec les dernières versions des fichiers.
+
+Voici comment utiliser la commande "git pull":
+
+Ouvrez une invite de commande ou un terminal dans le répertoire de votre dépôt Git local.
+
+Assurez-vous que vous êtes sur la branche à jour que vous souhaitez fusionner en utilisant la commande "git checkout".
+
+Tapez "git pull" suivi du nom de la branche distante et du nom du dépôt distant. Par exemple:
+
+Copy code
+git pull origin ma_branche
+Cela récupérera les derniers commits de la branche "ma_branche" du dépôt distant nommé "origin" et les fusionnera dans la branche en cours de votre dépôt local.
+
+Appuyez sur Entrée. Git récupérera les commits du dépôt distant et les fusionnera dans votre dépôt local. Si des conflits de fusion surgissent, vous devrez les résoudre avant de pouvoir finaliser la fusion.
+Vous pouvez également utiliser l'option "-r" pour forcer Git à effectuer une fusion à distance, ce qui signifie que Git tentera de fusionner les commits sans récupérer les fichiers du dépôt distant. Cela peut être utile lorsque vous travaillez avec un dépôt distant qui est principalement utilisé comme un emplacement de stockage central et non comme un lieu de travail collaboratif.
+
+### Git branch
+"git branch" est l'une des principales commandes Git utilisées pour gérer les branches de votre dépôt Git. Lorsque vous utilisez "git branch", vous pouvez créer de nouvelles branches, supprimer des branches existantes, renommer des branches ou afficher la liste des branches du dépôt.
+
+Voici comment utiliser la commande "git branch":
+
+Ouvrez une invite de commande ou un terminal dans le répertoire de votre dépôt Git.
+
+Pour créer une nouvelle branche, tapez "git branch" suivi du nom de la branche. Par exemple:
+
+Copy code
+git branch ma_branche
+Pour supprimer une branche, tapez "git branch -d" suivi du nom de la branche. Par exemple:
+Copy code
+git branch -d ma_branche
+Pour renommer une branche, tapez "git branch -m" suivi du nom de la branche actuelle et du nouveau nom de la branche. Par exemple:
+Copy code
+git branch -m ma_branche nouveau_nom
+Pour afficher la liste des branches du dépôt, tapez "git branch" sans arguments.
+
+Appuyez sur Entrée. Git exécutera la commande de gestion de branche sélectionnée.
+
+Il est important de gérer correctement les branches dans votre dépôt Git afin de pouvoir travailler de manière organisée et de pouvoir facilement partager et fusionner vos modifications avec d'autres développeurs.
+
+### Git merge
+
+"git merge" est l'une des principales commandes Git utilisées pour fusionner les branches de votre dépôt Git. Lorsque vous utilisez "git merge", vous pouvez fusionner les modifications apportées à une branche dans une autre branche. Cela vous permet de combiner les travaux de différentes branches dans une seule branche de travail.
+
+Voici comment utiliser la commande "git merge":
+
+Ouvrez une invite de commande ou un terminal dans le répertoire de votre dépôt Git.
+
+Assurez-vous que vous êtes sur la branche dans laquelle vous souhaitez fusionner les modifications en utilisant la commande "git checkout".
+
+Tapez "git merge" suivi du nom de la branche à fusionner. Par exemple:
+
+Copy code
+git merge ma_branche
+Appuyez sur Entrée. Git fusionnera les modifications de la branche "ma_branche" dans la branche en cours et affichera un message de confirmation.
+Si des conflits de fusion surgissent, vous devrez les résoudre avant de pouvoir finaliser la fusion. Git affichera des instructions sur la façon de résoudre ces conflits dans la sortie de la commande.
+
+Vous pouvez également utiliser l'option "-squash" pour fusionner les commits de la branche de manière à ce qu'ils apparaissent comme un seul commit dans l'historique de la branche en cours. Cela peut être utile lorsque vous voulez simplifier l'historique du dépôt.
+
+Copy code
+git merge --squash ma_branche
+
+### Git status
+Oui, c'est exact! "git status" est l'une des principales commandes Git utilisées pour afficher l'état actuel de votre dépôt Git. Lorsque vous utilisez "git status", Git affiche une liste des fichiers modifiés ou ajoutés qui ne font pas encore partie de l'historique du dépôt. Cela vous permet de voir quels fichiers ont été modifiés et sont prêts à être commités, ainsi que les fichiers qui ont été ajoutés à l'index mais qui n'ont pas encore été commités.
+
+Voici comment utiliser la commande "git status":
+
+Ouvrez une invite de commande ou un terminal dans le répertoire de votre dépôt Git.
+
+Tapez "git status" et appuyez sur Entrée.
+
+Git affichera l'état actuel de votre dépôt, y compris les fichiers modifiés et ajoutés à l'index, ainsi que la branche en cours.
+
+Voici un exemple de sortie de "git status":
+
+Copy code
+En cours de fusion : 36d4245... Mon message de commit
+Allons dans 'mon_projet'
+
+Vous êtes sur la branche 'ma_branche'
+Les commits suivants ne sont pas encore fusionnés
+
+### Git Log
+
+"git log" est l'une des principales commandes Git utilisées pour afficher l'historique des commits de votre dépôt Git. Lorsque vous utilisez "git log", Git affiche une liste de tous les commits de votre dépôt, avec leur identifiant de commit, l'auteur du commit et le message de commit. Cela vous permet de voir les modifications qui ont été apportées au dépôt au fil du temps et de comprendre comment l'historique du dépôt s'est développé.
+
+Voici comment utiliser la commande "git log":
+
+Ouvrez une invite de commande ou un terminal dans le répertoire de votre dépôt Git.
+
+Tapez "git log" et appuyez sur Entrée.
+
+Git affichera l'historique des commits de votre dépôt, avec leur identifiant de commit, l'auteur du commit et le message de commit.
+
+Voici un exemple de sortie de "git log":
+
+Copy code
+commit 36d424548c1d0a7f70bacbce6b27ff0b8e6a3d3d
+Author: John Doe <john.doe@example.com>
+Date:   Mon Jan 1 12:00:00 2018 -0500
+
+    Mon message de commit
+
+commit a1b2c3d4e5f6a7b8c9d0a1b2c3d4e5f6
+Author: Jane Doe <jane.doe@example.com>
+Date:   Sun Dec 31 12:00:00 2017 -
+
