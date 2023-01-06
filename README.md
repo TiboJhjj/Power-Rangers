@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
 Voici comment utiliser Git de manière plus complète :
 
 Tout d'abord, il faut installer Git sur votre ordinateur. Vous pouvez télécharger l'installateur depuis le site officiel de Git : https://git-scm.com/downloads
