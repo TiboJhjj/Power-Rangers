@@ -41,8 +41,7 @@ En plus de ces commandes de base, il existe également de nombreux outils en lig
 
 En résumé, Git est un outil puissant et très utile pour la gestion de version de code. En suivant les bonnes pratiques et en prenant le temps de comprendre comment fonctionne Git, vous serez en mesure de l'utiliser efficacement dans votre workflow de développement et de travailler en collaboration avec d'autres personnes sur des projets de code.
 
-
-### Git clone 
+### Git clone
 
 "git clone" est l'un des principaux commandes Git utilisé pour télécharger un dépôt Git existant sur votre ordinateur local. Lorsque vous utilisez "git clone", Git crée une copie complète du dépôt, y compris tous les fichiers source, l'historique de commit et les marques de branche. Cela vous permet de travailler sur le dépôt localement et de synchroniser vos changements avec le dépôt en ligne lorsque vous êtes prêt à partager vos modifications.
 
@@ -169,6 +168,7 @@ Appuyez sur Entrée. Git récupérera les commits du dépôt distant et les fusi
 Vous pouvez également utiliser l'option "-r" pour forcer Git à effectuer une fusion à distance, ce qui signifie que Git tentera de fusionner les commits sans récupérer les fichiers du dépôt distant. Cela peut être utile lorsque vous travaillez avec un dépôt distant qui est principalement utilisé comme un emplacement de stockage central et non comme un lieu de travail collaboratif.
 
 ### Git branch
+
 "git branch" est l'une des principales commandes Git utilisées pour gérer les branches de votre dépôt Git. Lorsque vous utilisez "git branch", vous pouvez créer de nouvelles branches, supprimer des branches existantes, renommer des branches ou afficher la liste des branches du dépôt.
 
 Voici comment utiliser la commande "git branch":
@@ -214,6 +214,7 @@ Copy code
 git merge --squash ma_branche
 
 ### Git status
+
 Oui, c'est exact! "git status" est l'une des principales commandes Git utilisées pour afficher l'état actuel de votre dépôt Git. Lorsque vous utilisez "git status", Git affiche une liste des fichiers modifiés ou ajoutés qui ne font pas encore partie de l'historique du dépôt. Cela vous permet de voir quels fichiers ont été modifiés et sont prêts à être commités, ainsi que les fichiers qui ont été ajoutés à l'index mais qui n'ont pas encore été commités.
 
 Voici comment utiliser la commande "git status":
@@ -244,17 +245,3 @@ Ouvrez une invite de commande ou un terminal dans le répertoire de votre dépô
 Tapez "git log" et appuyez sur Entrée.
 
 Git affichera l'historique des commits de votre dépôt, avec leur identifiant de commit, l'auteur du commit et le message de commit.
-
-Voici un exemple de sortie de "git log":
-
-Copy code
-commit 36d424548c1d0a7f70bacbce6b27ff0b8e6a3d3d
-Author: John Doe <john.doe@example.com>
-Date:   Mon Jan 1 12:00:00 2018 -0500
-
-    Mon message de commit
-
-commit a1b2c3d4e5f6a7b8c9d0a1b2c3d4e5f6
-Author: Jane Doe <jane.doe@example.com>
-Date:   Sun Dec 31 12:00:00 2017 -
-
