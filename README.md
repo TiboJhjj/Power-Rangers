@@ -6,7 +6,7 @@ Une fois Git installé, ouvrez votre terminal et naviguez jusqu'au répertoire o
 
 ### `git init`
 
-`git init` est l'un des principaux commandes Git utilisé pour initialiser un nouveau dépôt Git dans un répertoire existant. Lorsque vous utilisez `git init`, Git crée un nouveau sous-répertoire appelé ".git" dans le répertoire courant, qui contient tous les fichiers nécessaires pour suivre les modifications apportées aux fichiers dans ce répertoire.
+`git init` est l'un des principaux commandes Git utilisé pour initialiser un nouveau dépôt Git dans un répertoire existant. Lorsque vous utilisez `git init`, Git crée un nouveau sous-répertoire appelé ".git" dans le répertoire courant, qui contient tous les fichiers nécessaires pour suivre les modifications apportées aux fichiers dans ce répertoire.mlqksmdlkqmskdlmqksd
 
 Voici comment utiliser la commande `git init`:
 
